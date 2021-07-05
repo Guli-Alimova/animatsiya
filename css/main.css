@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+.field{
+    width: 800px;
+    height: 400px;
+    margin:0 auto;
+    display: flex;
+    background: #E6E6E6;
+    background: linear-gradient(to right, #E6E6E6 0%, #A9ADBE 50%, #75838D 100%);
+}  
+.ball{
+    background-image: url(../img/220px-Basketball.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    margin:auto;
+    animation:jumping-ball 2s ease-in-out infinite alternate;
+
+}
+@keyframes jumping-ball{
+    50%{
+        transform: translateY(105px);
+    }
+    100%{
+        transform: translateY(-90px);
+    }
+}
+
+.road{
+    width: 800px;
+    height: 500px;
+    margin:0 auto;
+    display: flex;
+    background-image:url(../img/431497-scene-avec-trois-maisons-le-long-de-la-route-gratuit-vectoriel.jpg) ;
+    animation: road 7s linear infinite;
+    
+   
+}
+.car{
+   
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/pngtree-car-clipart-small-red-car-png-image_2537665.jpg);
+    background-size: cover;
+    margin:381px auto;
+    animation: drive-Car 4s linear infinite ;
+    animation-direction: normal;
+ 
+    
+   
+}
+@keyframes drive-Car{
+from{
+      transform: translateX(5px);
+    }
+to{
+       transform: translateX(-150px);
+    }
+}
+@keyframes road{
+from{
+        transform: translateX(5px);
+    }
+to{
+        transform: translateX(-150px);
+    }
+}
+.earth{
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(229deg, rgba(15,12,75,1) 36%, rgba(66,72,111,0.9476832969515931) 100%);
+    display: flex;
+}
+
+.sun{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 196);
+    align-items: center;
+    position: relative;
+    margin:133px;
+    box-shadow: 1px 2px 16px 12px rgba(212, 212, 171, 0.863);
+    animation: sun 3s linear infinite alternate;
+}
+.moon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:rgb(7, 7, 102);
+    align-items: center;
+    position: absolute;
+    margin:133px;
+}
+@keyframes sun{
+    from{
+        transform: translate(10px) ;
+       
+    }
+    to{
+        transform: translate(-10px);
+       
+    }
+}
